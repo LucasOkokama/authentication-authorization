@@ -1,0 +1,177 @@
+# === OS ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# === IDEs and editors ===
+.vscode/
+.idea/
+*.suo
+*.ntvs_analysis.dat
+*.ncb
+*.aps
+*.opt
+*.bak
+*.swp
+*.sdf
+*.dbmdl
+*.user
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# === Node.js ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-store/
+dist/
+build/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+.env
+.venv/
+env/
+venv/
+
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+target/
+bin/
+out/
+.gradle/
+build/
+
+# === Spring Boot ===
+*.db
+*.h2.db
+*.mv.db
+*.log
+*.tmp
+*.bak
+
+# === .NET / C# ===
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.vs/
+
+# === C / C++ ===
+*.obj
+*.o
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# === Go ===
+bin/
+vendor/
+*.test
+*.exe
+
+# === Rust ===
+target/
+Cargo.lock
+
+# === Flutter / Dart ===
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+.idea/
+*.iml
+
+# === PHP / Laravel ===
+vendor/
+.env
+*.log
+*.cache
+
+# === Ruby ===
+*.gem
+*.rbc
+.bundle/
+log/
+tmp/
+vendor/bundle/
+
+# === Android ===
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+
+# === iOS / Xcode ===
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
+# === Web Frontend (React, Angular, Vue) ===
+dist/
+build/
+.cache/
+.next/
+.nuxt/
+out/
+coverage/
+.husky/_/
+.storybook/
+
+# === Docker ===
+*.pid
+*.seed
+docker-compose.override.yml
+.env
+
+# === Logs and backups ===
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+*.bak
+*.tmp
+
+# === Misc ===
+*.lock
+*.env.local
+*.env.*
+.envrc
+*.tgz
+*.gz
+*.zip
+*.tar
