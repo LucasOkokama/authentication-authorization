@@ -21,6 +21,23 @@ app.get("/api/token", (req, res) => {
   });
 });
 
+app.get("/api/verify", (req, res) => {
+  const token = req.headers["authorization"].split(" ")[1] || "";
+  const secret = "mySecret";
+
+  try {
+    const decoded = jwt.verify(token, secret);
+    res.status(200).json({
+      data: decoded,
+    });
+  } catch (err) {
+    console.log(`Error: ${err}`);
+    res.status(401).json({
+      message: "Invalid Token",
+    });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
