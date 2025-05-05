@@ -54,6 +54,13 @@ app.post('/login', (req, res) => {
   }
 });
 
+app.post('/posts', authenticateToken, (req, res) => {
+  const { title } = req.body;
+  const post = { username: req.username, title };
+  posts.push(post);
+  return res.status(201).json({ message: 'Post created with success' });
+});
+
 app.get('/posts', authenticateToken, (req, res) => {
   return res.json(posts.filter(post => post.username === req.username));
 });
@@ -64,10 +71,9 @@ function authenticateToken(req, res, next) {
 
   if (!token) return res.sendStatus(401);
 
-  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, username) => {
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decode) => {
     if (err) return res.sendStatus(403);
-
-    req.username = username;
+    req.username = decode.username;
     next();
   });
 }
