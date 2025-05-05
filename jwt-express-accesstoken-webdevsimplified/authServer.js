@@ -23,6 +23,11 @@ app.post('/token', (req, res) => {
   });
 });
 
+app.delete('/logout', (req, res) => {
+  refreshTokens = refreshTokens.filter(token => token !== req.body.token);
+  return res.sendStatus(204);
+});
+
 app.get('/register', async (req, res) => {
   const { username, password } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
