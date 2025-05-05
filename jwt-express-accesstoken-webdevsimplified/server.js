@@ -6,12 +6,9 @@ const jwt = require('jsonwebtoken');
 const app = express();
 app.use(express.json());
 
-const users = [{ username: 'Admin', password: '12345' }];
+const users = [];
 
-const posts = [
-  { username: 'Kyle', title: 'Post 1' },
-  { username: 'Kyle', title: 'Post 2' },
-];
+const posts = [];
 
 app.get('/register', async (req, res) => {
   const { username, password } = req.body;
@@ -56,6 +53,24 @@ app.post('/login', (req, res) => {
     return res.status(500).send();
   }
 });
+
+app.get('/posts', authenticateToken, (req, res) => {
+  return res.json(posts.filter(post => post.username === req.username));
+});
+
+function authenticateToken(req, res, next) {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
+
+  if (!token) return res.sendStatus(401);
+
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, username) => {
+    if (err) return res.sendStatus(403);
+
+    req.username = username;
+    next();
+  });
+}
 
 app.listen(3000, () => {
   console.log(`Server running on port 3000`);
