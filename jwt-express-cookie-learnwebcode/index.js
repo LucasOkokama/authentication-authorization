@@ -33,7 +33,7 @@ app.post('/api/token', (req, res) => {
   const secret = 'mySecret';
   const nameJwt = jwt.sign({ username: payload.name }, secret, { expiresIn: '1h' });
 
-  res.cookie('username', x, {
+  res.cookie('username', nameJwt, {
     // "expires" --> The cookie expires in 24 hours
     maxAge: 86400000,
 
