@@ -22,7 +22,6 @@ model User{
   @@map("users")
 }
 
-
 model RefreshToken{
   id          String    @id @default(uuid())
   expiresIn   Int
