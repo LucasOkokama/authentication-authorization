@@ -24,6 +24,12 @@ class AuthenticateUserUseCase {
       throw new Error('User or password incorrect');
     }
 
+    await client.refreshToken.deleteMany({
+      where: {
+        userId: userAlreadyExists.id,
+      },
+    });
+
     const generateTokenProvider = new GenerateTokenProvider();
     const token = await generateTokenProvider.execute(userAlreadyExists.id);
 
