@@ -16,9 +16,19 @@ const getAllProducts = async () => {
 };
 
 app.get('/', async (req, res) => {
-  const products = await getAllProducts();
-  res.send({
-    products,
+  const productsFromCache = await client.get('getAllProducts');
+
+  if (!productsFromCache) {
+    const products = await getAllProducts();
+    await client.set('getAllProducts', JSON.stringify(products));
+
+    return res.json({
+      products,
+    });
+  }
+
+  return res.json({
+    products: JSON.parse(productsFromCache),
   });
 });
 
