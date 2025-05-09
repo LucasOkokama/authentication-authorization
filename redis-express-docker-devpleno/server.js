@@ -14,7 +14,7 @@ const products = [
 ];
 
 const getAllProducts = async () => {
-  const responseTimeMS = Math.random() * 5000;
+  const responseTimeMS = Math.random() * 15000;
   return new Promise(resolve => {
     setTimeout(() => {
       resolve(products);
@@ -23,7 +23,25 @@ const getAllProducts = async () => {
 };
 
 app.get('/', async (req, res) => {
+  const products = [];
   const productsFromCache = await client.get('getAllProducts');
+  const isProductsFromCacheStale = !(await client.get(
+    'getAllProducts:validation'
+  ));
+
+  // Stale-While-Revalidate
+  if (isProductsFromCacheStale) {
+    const isRefetching = !!(await client.get('getAllProducts:is-refetching'));
+    if (!isRefetching) {
+      await client.set('getAllProducts:is-refetching', 'true', { EX: 20 });
+      setTimeout(async () => {
+        products = await getAllProducts();
+        await client.set('getAllProducts', JSON.stringify(products));
+        await client.set('getAllProducts:validation', 'true', { EX: 5 });
+        await client.del('getAllProducts:is-refetching');
+      }, 0);
+    }
+  }
 
   if (!productsFromCache) {
     const products = await getAllProducts();
