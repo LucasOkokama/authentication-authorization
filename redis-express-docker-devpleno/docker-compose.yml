@@ -9,6 +9,14 @@ services:
     volumes:
       - redis-data:/data
 
+  redisinsight:
+    image: redislabs/redisinsight:latest
+    container_name: redis-insight
+    ports:
+      - '5540:5540'
+    volumes:
+      - redis-insight:/data
+
   app:
     build: .
     container_name: express-app
@@ -24,3 +32,4 @@ services:
 
 volumes:
   redis-data:
+  redis-insight:
