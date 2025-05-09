@@ -23,7 +23,6 @@ const getAllProducts = async () => {
 };
 
 app.get('/', async (req, res) => {
-  const products = [];
   const productsFromCache = await client.get('getAllProducts');
   const isProductsFromCacheStale = !(await client.get(
     'getAllProducts:validation'
@@ -35,7 +34,7 @@ app.get('/', async (req, res) => {
     if (!isRefetching) {
       await client.set('getAllProducts:is-refetching', 'true', { EX: 20 });
       setTimeout(async () => {
-        products = await getAllProducts();
+        const products = await getAllProducts();
         await client.set('getAllProducts', JSON.stringify(products));
         await client.set('getAllProducts:validation', 'true', { EX: 5 });
         await client.del('getAllProducts:is-refetching');
