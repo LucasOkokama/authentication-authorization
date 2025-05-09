@@ -6,11 +6,18 @@ const client = createClient({
   url: 'redis://redis:6379',
 });
 
+const { v4: uuidv4 } = require('uuid');
+
+const products = [
+  '0bb07723-682e-465e-8409-62f56fec23d9',
+  '9d92a1bf-57f6-4e15-8e66-ada7deb0fffe',
+];
+
 const getAllProducts = async () => {
   const responseTimeMS = Math.random() * 5000;
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve(['Prod 1', 'Prod 2']);
+      resolve(products);
     }, responseTimeMS);
   });
 };
@@ -30,6 +37,12 @@ app.get('/', async (req, res) => {
   return res.json({
     products: JSON.parse(productsFromCache),
   });
+});
+
+app.get('/add', async (req, res) => {
+  await client.del('getAllProducts');
+  products.push(uuidv4());
+  return res.redirect('http://localhost:3000');
 });
 
 const startup = async () => {
