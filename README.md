@@ -76,93 +76,81 @@ This project leverages a diverse set of technologies to support the study and pr
 # References
 <table align="center">
     <tr>
-        <th></th>
+        <th>Creator</th>
         <th>Video</th>
         <th>Tech</th>
         <th>GitHub Repo</th>
     </tr>
     <tr>
-        <th>1.</th>
-        <th><a href="https://www.youtube.com/watch?v=zuKbR4Q428o">JavaScript Unit Testing Tutorial for Beginners</a></th>
-        <th>Vitest</th>
-        <th><a href="https://github.com/mosh-hamedani/javascript-testing-starter">javascript-testing-starter</a></th>
-    </tr>
-    <tr>
-        <th>2.</th>
-        <th><a href="https://www.youtube.com/watch?v=CxSL0knFxAs">React Vite Testing Tutorial For Beginners - Vitest Testing Crash Course</a></th>
-        <th>Vitest</th>
-        <th><a href="https://github.com/mosh-hamedani/javascript-testing-starter">react-vite-testing-tutorial</a></th>
-    </tr>
-    <tr>
-        <th>3.</th>
-        <th><a href="https://www.youtube.com/watch?v=EgpLj86ZHFQ">Please Learn How To Write Tests in Python… • Pytest Tutorial</a></th>
-        <th>Pytest</th>
-        <th><a href="#"></a></th>
-    </tr>
-    <tr>
-        <th>4.</th>
-        <th><a href="https://www.youtube.com/watch?v=YbpKMIUjvK8">How To Write Unit Tests in Python • Pytest Tutorial</a></th>
-        <th>Pytest</th>
-        <th><a href="https://github.com/pixegami/simple-pytest-tutorial">simple-pytest-tutorial</a></th>
-    </tr>
-    <tr>
-        <th>5.</th>
-        <th><a href="https://www.youtube.com/watch?v=vZm0lHciFsQ">Java Unit Testing with JUnit - Tutorial - How to Create And Use Unit Tests</a></th>
-        <th>JUnit</th>
+        <th>Mahesh Kariya</th>
+        <th><a href="https://www.youtube.com/watch?v=bSI2zOQm7qM">Easy JWT Authentication in Node.js | Step-by-Step Guide</a></th>
+        <th>JWT | Express</th>
         <th><a href=""></a></th>
     </tr>
     <tr>
-        <th>6.</th>
-        <th><a href="https://www.youtube.com/watch?v=6uSnF6IuWIw">JUnit 5 Tutorial - Crash Course</a></th>
-        <th>JUnit</th>
-        <th><a href="https://github.com/marcobehlerjetbrains/junit5-tutorial">junit5-tutorial</a></th>
+        <th>Web Dev Simplified</th>
+        <th><a href="https://www.youtube.com/watch?v=Ud5xKCYQTjM">Build Node.js User Authentication - Password Login</a></th>
+        <th>Express | Bcrypt</th>
+        <th><a href="https://github.com/WebDevSimplified/Nodejs-User-Authentication">Nodejs-User-Authentication</a></th>
     </tr>
     <tr>
-        <th>7.</th>
-        <th><a href="https://www.youtube.com/watch?v=rBdPPHq7REw">Testes unitários com jUnit e Mockito</a></th>
-        <th>JUnit | Mockito</th>
-        <th><a href="https://github.com/matheuspieropan/aula-youtube/tree/main/Testes/unitario">aula-youtube/Testes/unitario</a></th>
+        <th>Web Dev Simplified</th>
+        <th><a href="https://www.youtube.com/watch?v=mbsmsi7l3r4">JWT Authentication Tutorial - Node.js</a></th>
+        <th>JWT | Express</th>
+        <th><a href="https://github.com/WebDevSimplified/JWT-Authentication">JWT-Authentication</a></th>
+    </tr>
+    <tr>
+        <th>Dave Gray</th>
+        <th><a href="https://www.youtube.com/watch?v=favjC6EKFgw">JWT Authentication | Node JS and Express tutorials for Beginners</a></th>
+        <th>Bcrypt | Express | CORS</th>
+        <th><a href="https://github.com/gitdagray/user_auth">user_auth</a></th>
+    </tr>
+    <tr>
+        <th>LearnWebCode</th>
+        <th><a href="https://www.youtube.com/watch?v=uXDnS5PcjCA">Cookies, Sessions, JSON Web Tokens (JWT) and More 🍪🔐</a></th>
+        <th>JWT | Express | CookieParser</th>
+        <th><a href="https://github.com/LearnWebCode/youtube-cookies-and-more">youtube-cookies-and-more</a></th>
+    </tr>
+    <tr>
+        <th>Rocketseat</th>
+        <th><a href="https://www.youtube.com/watch?v=RaweREhpBX8">Como implementar Refresh Token em uma aplicação com Node? - Code/drops #88</a></th>
+        <th>JWT | Express | Bcrypt | Dayjs</th>
+        <th><a href=""></a></th>
+    </tr>
+    <tr>
+        <th>Code Realm</th>
+        <th><a href="https://www.youtube.com/watch?v=2PPSXonhIck">Authentication on the Web (Sessions, Cookies, JWT, localStorage, and more)</a></th>
+        <th>Sessions | Cookies | Tokens | JWT | ClientStorage</th>
+        <th><a href="https://github.com/alex996/presentations/blob/master/auth.md">auth</a></th>
     </tr>
      <tr>
-        <th>8.</th>
-        <th><a href="https://www.youtube.com/watch?v=XVFqOFKGeGM">Unit Testing in Spring Boot with JUnit 5 and Mockito | Part 1</a></th>
-        <th>Spring Boot Testing | JUnit | Mockito</th>
-        <th><a href="https://github.com/codesnippetjava/ecom">ecom</a></th>
-    </tr>
-    <tr>
-        <th>9.</th>
-        <th><a href="https://www.youtube.com/watch?v=6m5T3we4xes">Aprenda DO ZERO como escrever TESTES UNITÁRIOS com XUnit e medir a COBERTURA DE TESTES</a></th>
-        <th>xUnit</th>
+        <th>Web Dev Cody</th>
+        <th><a href="https://www.youtube.com/watch?v=BgsQrOHNKeY">How do server side authentication sessions work (express & cookies)</a></th>
+        <th>Express | Bcrypt | CookieParser</th>
         <th><a href=""></a></th>
     </tr>
     <tr>
-        <th>10.</th>
-        <th><a href="https://www.youtube.com/watch?v=56N0P67ffIA">Cypress Para Iniciantes | e2e Tests Em Frontend Apps | Erick Wendel</a></th>
-        <th>Cypress</th>
-        <th><a href="https://github.com/ErickWendel/cypress-for-begginers">cypress-for-begginers</a></th>
-    </tr>
-    <tr>
-        <th>11.</th>
-        <th><a href="https://www.youtube.com/watch?v=R2zd1Gz2nV0">Cypress Course 2022 in 2 hours | Cypress Automation tutorial</a></th>
-        <th>Cypress</th>
-        <th><a href="https://github.com/bitfumes/cypress-course-2022">cypress-course-2022</a></th>
-    </tr>
-    <tr>
-        <th>12.</th>
-        <th><a href="https://www.youtube.com/watch?v=jG2uNrTREF8">.NET TESTES UNITÁRIOS DO ZERO | PARTE 01 | FAKERS, ASSERTIONS, TRAITS, FACTS, THEORIES, TRAITS</a></th>
-        <th>xUnit</th>
-        <th><a href="https://github.com/cristianWilliam/FundamentosTestes">FundamentosTestes</a></th>
-    </tr>
-    <tr>
-        <th>13.</th>
-        <th><a href="https://www.youtube.com/watch?v=71ECrViH_Ng">Selenium - Automatize Qualquer Tarefa na Internet com Python</a></th>
-        <th>Selenium</th>
+        <th>DevPleno</th>
+        <th><a href="https://www.youtube.com/watch?v=wVHBQILmd_8">CACHE com NodeJS e Redis NA PRÁTICA</a></th>
+        <th>Redis | Express | Docker</th>
         <th><a href=""></a></th>
     </tr>
     <tr>
-        <th>14.</th>
-        <th><a href="https://www.youtube.com/watch?v=jBOLRzjEERk">Seu próximo back-end Node com TESTES! (+ SOLID)</a></th>
-        <th>Vitest</th>
+        <th>DevPleno</th>
+        <th><a href="https://www.youtube.com/watch?v=yYmhPys6KU8">CACHE AVANÇADO com NodeJS e Redis - Parte 2</a></th>
+        <th>Redis | Express | Docker</th>
+        <th><a href=""></a></th>
+    </tr>
+    <tr>
+        <th>Rocketseat</th>
+        <th><a href="https://www.youtube.com/watch?v=hf3EHCXsRYM">Cache com Redis em Node.js - Code/drops #104</a></th>
+        <th>JWT | ioRedis | Express | Bcrypt | Docker | PostgreSQL</th>
+        <th><a href="https://github.com/rocketseat-content/youtube_node_redis">youtube_node_redis</a></th>
+    </tr>
+    <tr>
+        <th>Jan Goebel</th>
+        <th><a href="https://www.youtube.com/watch?v=bvQah0k5-eA">Sessions in Node #1 | Authentication in Node.js with Express and sessions | Sessions explained</a></th>
+        <th>Session | Redis | Express | Bcrypt | Docker</th>
         <th><a href=""></a></th>
     </tr>
 </table>
